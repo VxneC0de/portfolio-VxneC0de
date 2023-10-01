@@ -74,3 +74,15 @@ $(".js .bar").circleProgress({
 $(".css .bar").circleProgress({
   value: 0.80
 });
+
+ScrollReveal({ 
+  // reset: true,
+  distance: "80px",
+  duration: 2000,
+  delay: 200
+});
+
+ScrollReveal().reveal('.header', { origin: 'top' });
+ScrollReveal().reveal('.box1, .flip-card', { origin: 'bottom' });
+ScrollReveal().reveal('.title, .top, .social-media, .home-btn, .img-2, .portafolioPrinci-box, .btnLogin-popup', { origin: 'left' });
+ScrollReveal().reveal('.img-1, .top2, .data, .input', { origin: 'right' });
