@@ -1,0 +1,220 @@
+.contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-title{
+    overflow: hidden;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+
+.contact-title h2{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    color: var(--oscuro);
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.589);
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.contact-title span{
+    color: var(--medio);
+}
+
+
+.contact-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.input-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.textarea-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-box .input{
+    width: 100%;
+    padding: 1em;
+    font-size: .9em;
+    font-family: 'Poppins', sans-serif;
+    color: var(--oscuro);
+    background: #faf3ff;
+    border-radius: .8rem;
+    border: 0;
+    box-shadow: 0 .1rem .5rem #0000006c;
+    transition: 300ms ease-in-out;
+    outline: none;
+    font-weight: 500;
+}
+
+.textarea-box .input{
+    width: 100%;
+    padding: 1em;
+    font-size: .9rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--oscuro);
+    background: #faf3ff;
+    border-radius: .8rem;
+    border: 0;
+    box-shadow: 0 .1rem .5rem #0000006c;
+    transition: 300ms ease-in-out;
+    outline: none;
+    font-weight: 500; 
+}
+
+.btnLogin-popup{
+    position: relative;
+    width: 300px;
+    height: 38px;
+    background: var(--oscuro);
+    border: none;
+    outline: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: var(--white);
+    font-weight: 600;
+    transition: .5s;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.btnLogin-popup:hover::before {
+    transform: scaleX(1);
+}
+
+.button-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+  
+.btnLogin-popup::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    transition: all 0.475s;
+}
+
+@media screen and (max-width: 990px){
+    .contact-container{
+      height: 100%;
+      flex-direction: column;
+    } 
+  
+    .contact-title{
+      margin-top: 80px;
+  }
+  }
+
+  @media screen and (max-width: 900px){
+    .input-box{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input-box .input{
+        width: 93.5%;
+        padding: 1em;
+        font-size: .9em;
+        font-family: 'Poppins', sans-serif;
+        color: var(--oscuro);
+        background: #faf3ff;
+        border-radius: .8rem;
+        border: 0;
+        box-shadow: 0 .1rem .5rem #0000006c;
+        transition: 300ms ease-in-out;
+        outline: none;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .input-box .input{
+        width: 91%;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .form{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .input-box{
+        width: 100%;
+    }
+
+    .textarea-box .input{
+        width: 91%;
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 318px){
+
+    .textarea-box .input{
+        width: 100%;
+    }
+}
