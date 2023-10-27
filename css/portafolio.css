@@ -94,14 +94,14 @@
   }
   
   .flip-card-front {
-    background-image: url(/img/image-1.png);
+    background-image: url(img/image-1.png);
     background-size: cover;
     background-position: center;
     color: var(--white);
   }
   
   .flip-card-back {
-    background-image: url(/img/imagenPorta1.png);
+    background-image: url(img/imagenPorta1.png);
     background-size: cover;
     background-position: center;
     color: var(--white);
