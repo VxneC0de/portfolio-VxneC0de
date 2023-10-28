@@ -94,14 +94,14 @@
   }
   
   .flip-card-front {
-    background-image: url(img/image-1.png);
+    background-image: url(../img/image-1.png);
     background-size: cover;
     background-position: center;
     color: var(--white);
   }
   
   .flip-card-back {
-    background-image: url(img/imagenPorta1.png);
+    background-image: url(../img/imagenPorta1.png);
     background-size: cover;
     background-position: center;
     color: var(--white);
@@ -114,35 +114,35 @@
   }
   
   .front2{
-    background-image: url(/img/image-2.png);
+    background-image: url(../img/image-2.png);
   }
 
   .front3{
-    background-image: url(/img/image-3.png);
+    background-image: url(../img/image-3.png);
   }
 
   .front4{
-    background-image: url(/img/image-4.png);
+    background-image: url(../img/image-4.png);
   }
 
   .front5{
-    background-image: url(/img/image-5.png);
+    background-image: url(../img/image-5.png);
   }
 
   .back2{
-    background-image: url(/img/imagenPorta2.png);
+    background-image: url(../img/imagenPorta2.png);
   }
 
   .back3{
-    background-image: url(/img/imagenPorta3.png);
+    background-image: url(../img/imagenPorta3.png);
   }
 
   .back4{
-    background-image: url(/img/imagenPorta4.png);
+    background-image: url(../img/imagenPorta4.png);
   }
 
   .back5{
-    background-image: url(/img/imagenPorta5.png);
+    background-image: url(../img/imagenPorta5.png);
   }
 
 
